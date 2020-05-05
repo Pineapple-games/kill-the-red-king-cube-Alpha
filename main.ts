@@ -46,7 +46,7 @@ let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, SpriteKind.Player)
-controller.moveSprite(mySprite, 50, 50)
+controller.moveSprite(mySprite, 100, 100)
 let Roctek = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
