@@ -25,17 +25,10 @@ namespace myTiles {
 info.player2.onLifeZero(function () {
     game.over(true)
 })
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    for (let index = 0; index < 1e+58; index++) {
-        controller.moveSprite(mySprite, 200, 200)
-        pause(5000)
-    }
-})
 info.onLifeZero(function () {
     game.over(false, effects.splatter)
 })
-let mySprite: Sprite = null
-mySprite = sprites.create(img`
+let mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
