@@ -127,7 +127,7 @@ tiles.setTilemap(tiles.createTilemap(
             TileScale.Sixteen
         ))
 info.setLife(100)
-info.player2.setLife(3000)
+info.player2.setLife(100)
 let Emeny = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . 5 . 5 . 5 . . . . . . 
@@ -169,6 +169,7 @@ game.setDialogCursor(img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `)
+scene.cameraFollowSprite(mySprite)
 forever(function () {
     Roctek.follow(Emeny, 200)
     if (Emeny.overlapsWith(mySprite)) {
@@ -181,5 +182,80 @@ forever(function () {
     if (Emeny.overlapsWith(Roctek)) {
         info.player2.changeLifeBy(-1)
         info.player2.changeLifeBy(-1)
+        Roctek.destroy(effects.warmRadial, 500)
+        Roctek = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . 1 . . . . . . 1 . . . . . 
+. . . . . 8 8 8 8 . . . . . . . 
+. . . 8 . . . . . . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 . 8 8 8 8 . 1 . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Projectile)
+        Roctek = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . 1 . . . . . . 1 . . . . . 
+. . . . . 8 8 8 8 . . . . . . . 
+. . . 8 . . . . . . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 . 8 8 8 8 . 1 . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Projectile)
+        Roctek = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . 1 . . . . . . 1 . . . . . 
+. . . . . 8 8 8 8 . . . . . . . 
+. . . 8 . . . . . . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 . 8 8 8 8 . 1 . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Projectile)
+        Roctek = sprites.create(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . 1 . . . . . . 1 . . . . . 
+. . . . . 8 8 8 8 . . . . . . . 
+. . . 8 . . . . . . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . 8 . f f f f . 8 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 1 . 8 8 8 8 . 1 . . . . . 
+. . 1 . . . . . . . . 1 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, SpriteKind.Projectile)
+        Roctek.setPosition(mySprite.x, mySprite.y)
+        Roctek.follow(Emeny, 100)
     }
 })
