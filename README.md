@@ -1,34 +1,24 @@
-# kill-the-red-king-cube-alpha ![Build status badge](https://github.com/valenplayer3000/kill-the-red-king-cube-alpha/workflows/MakeCode/badge.svg)
+# Kill the red king!!!    ![Build status badge](https://github.com/valenplayer3000/kill-the-red-king-cube-alpha/workflows/MakeCode/badge.svg)
+
+## Hi!
+
+So this is a game that you need to kill the red king. 
+Ez, right? Well this game is really hard, first the king has the same exact size as yourself (the white cube), second, the boss / king has 100 hp (like yourself) and third, you have an infinite supply of rockets (that means that you can spam the rockets).
 
 
+## FAQ
 
-## Use this extension
+**How do i install the game?
 
-This repository can be added as an **extension** in MakeCode.
+First you need to have one of the suported devices listed on www.sites.google.com/view/pineappledev/proyects/depression-in-a-nutshell and you need to follow the instuctions on https://sites.google.com/view/pineappledev/support#h.re7av0iiw779
 
-* open https://arcade.makecode.com/
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for the URL of this repository and import
 
-## Edit this extension
+**The game is on pc?
 
-To edit this repository in MakeCode.
+Not for now, because the engine i am using only supports PXT/Arcade Based devices. But i need help for porting the game to unity2D and make an standalone game for Mac, Windows and Linux.
 
-* open https://arcade.makecode.com/
-* click on **Import** then click on **Import URL**
-* paste the repository URL and click import
 
-## Blocks preview
+**Where do i buy an PXT/Arcade device?
 
-This image shows the blocks code from the last commit in master.
-This image may take a few minutes to refresh.
-
-![A rendered view of the blocks](https://github.com/valenplayer3000/kill-the-red-king-cube-alpha/raw/master/.makecode/blocks.png)
-
-## Supported targets
-
-* for PXT/arcade
-* for PXT/arcade
-(The metadata above is needed for package search.)
+You can buy one on amazon or ebay. (Not now because the pandemic thingy is making some trobule here...)
 
