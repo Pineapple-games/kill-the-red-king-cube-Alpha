@@ -21,13 +21,13 @@ Not for now, because the engine i am using only supports PXT/Arcade Based device
 
 You can buy one on amazon or ebay. (Not now because the pandemic thingy is making some trobule here...)
 
-##Phrase
+## Phrase
 These phrase are 20.
 
-**Alpha 1-5
+**Alpha 1-5**
 
-**Beta 6-10
+**Beta 6-10**
 
-**Pre-resales 11-15
+**Pre-resales 11-15**
 
-**Resales ∞
+**Resales ∞**
